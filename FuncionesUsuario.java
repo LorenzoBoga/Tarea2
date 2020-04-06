@@ -15,4 +15,8 @@ public Class FuncionesUsuario{
 			return conDescuento;
 		}
 	}
+
+	public boolean CobroDeSueldo(Usuario user, int ingreso){
+		user.setSaldo(user.getSaldo() + ingreso);
+	}
 }
