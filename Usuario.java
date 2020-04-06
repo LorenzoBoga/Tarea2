@@ -70,4 +70,8 @@ public class Usuario {
         this.saldo = saldo;
     }
 
+    @Override
+    public boolean equals(Object o){
+        return this.cedula == ((Usuario)o).getCedula();
+    }
 }
